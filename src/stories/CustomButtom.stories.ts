@@ -1,22 +1,24 @@
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from "@storybook/vue3";
 
-import Button from './CustomButtom.vue';
+import Button from "../components/Button.vue";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta = {
-  title: 'Example/CustomButton',
+  title: "Components/Button",
+  tags: ["autodocs"],
   component: Button,
-  // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ['autodocs'],
   argTypes: {
-    size: { control: 'select', options: ['small', 'medium', 'large'] },
-    backgroundColor: { control: 'color' },
-    onClick: { action: 'clicked' },
+
+    size: { control: 'select', options: ['small', 'normal', 'large', 'extra-large'] },
+    intent: { control: 'select', options: ['primary', 'secondary', 'danger', 'text'] },
   },
-  args: { primary: false }, // default value
+  args: {
+    default: 'TEst'
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 /*
  *👇 Render functions are a framework specific feature to allow you control on how the component renders.
@@ -25,28 +27,26 @@ type Story = StoryObj<typeof meta>;
  */
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'Button',
+    default: 'Intent primary',
+    intent: 'primary',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    primary: false,
-    label: 'Button',
+    default: 'Intent secondary',
+    intent: 'secondary',
   },
 };
 
 export const Large: Story = {
   args: {
-    label: 'Button',
-    size: 'large',
+    size: "large",
   },
 };
 
 export const Small: Story = {
   args: {
-    label: 'Button',
-    size: 'small',
+    size: "small",
   },
 };
