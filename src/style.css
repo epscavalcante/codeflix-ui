@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Gloria Hallelujah";
+  src: url("./assets/fonts/Gloria-Hallelujah.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ITC Clearface Pro";
+  src: url("./assets/fonts/ITC-Clearface-Pro.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clearface ITC Pro";
+  src: local("./assets/fonts/ITCClearfaceStd/ClearfaceStd-Regular.otf")
+    url("./assets/fonts/ITCClearfaceStd/ClearfaceStd-Regular.otf")
+    format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ITC Clearface Std";
+  src: url("./assets/fonts/ITCClearfaceStd/b0cc4fe77d43f15314c1e266b2d8272d.eot");
+  src: url("./assets/fonts/ITCClearfaceStd/b0cc4fe77d43f15314c1e266b2d8272d.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/ITCClearfaceStd/b0cc4fe77d43f15314c1e266b2d8272d.woff2")
+      format("woff2"),
+    url("./assets/fonts/ITCClearfaceStd/b0cc4fe77d43f15314c1e266b2d8272d.ttf")
+      format("truetype");
+  font-display: swap;
+}
