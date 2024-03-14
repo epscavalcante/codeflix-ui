@@ -24,14 +24,14 @@
 
     <component
       v-if="!props.loading"
-      :is="props.leftIcon"
+      :is="props.leftIcon as any"
       class="h-5 w-5 mr-2"
     />
     <slot v-if="!props.loading" />
 
     <component
       v-if="!props.loading"
-      :is="props.rightIcon"
+      :is="props.rightIcon as any"
       class="h-5 w-5 ml-2"
     />
   </button>
