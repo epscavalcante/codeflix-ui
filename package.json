@@ -19,7 +19,7 @@
     "dist"
   ],
   "publishConfig": {
-    "epscavalcante:registry": "https://npm.pkg.github.com"
+    "@epscavalcante:registry": "https://npm.pkg.github.com"
   },
   "license": "MIT",
   "scripts": {
