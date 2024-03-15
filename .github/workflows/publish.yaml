@@ -1,4 +1,4 @@
-name: Node.js Package
+name: Publish new version of lib
 
 on:
   push:
