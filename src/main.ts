@@ -1,7 +1,11 @@
-import { createApp } from 'vue'
-import './style.css';
-import App from './App.vue'
+import { App } from "vue";
+import "./style.css";
+import Button from "./components/Button.vue";
 
-const app = createApp(App);
+export { Button };
 
-app.mount('#app');
+export default {
+  install: (app: App) => {
+    app.component("CodeflixButton", Button);
+  },
+};
