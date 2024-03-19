@@ -24,11 +24,12 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite build --watch",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc --p ./tsconfig-build.json && vue-tsc --declaration --emitDeclarationOnly --outdir ./dist && vite build",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "generate-types": ''
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.19",
