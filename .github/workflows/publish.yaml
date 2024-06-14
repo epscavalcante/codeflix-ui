@@ -22,7 +22,9 @@ jobs:
         with:
           version: 6.24.1
       - run: pnpm i
+      - run: pnpm typecheck
       - run: pnpm build
+      - run: pnpm types
       - name: save build artifact
         uses: actions/upload-artifact@v3
         with:
