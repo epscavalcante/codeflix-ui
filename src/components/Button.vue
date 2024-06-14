@@ -41,7 +41,7 @@
 import { cva } from "class-variance-authority";
 import { computed } from "vue";
 
-export interface Props {
+export type Props = {
   leftIcon?: Object;
   rightIcon?: Object;
   loading?: boolean;
