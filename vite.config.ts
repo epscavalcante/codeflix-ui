@@ -12,7 +12,7 @@ export default defineConfig({
     port: 5147,
   },
   build: {
-    // copyPublicDir: false,
+    cssCodeSplit: false,
     lib: {
       entry: path.resolve(__dirname, "src/main.ts"),
       formats: ["es"],

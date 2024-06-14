@@ -24,7 +24,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite build --watch",
-    "build": "vue-tsc --p ./tsconfig-build.json && vue-tsc --declaration --emitDeclarationOnly --outdir ./dist && vite build",
+    "build": "vite build",
+    "types": "vue-tsc --declaration --emitDeclarationOnly --outdir ./dist",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
