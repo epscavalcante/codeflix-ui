@@ -29,7 +29,6 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "generate-types": ''
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.19",
